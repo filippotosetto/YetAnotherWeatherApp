@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (2.0.2)
+  - LMGeocoder (1.0.4)
+  - SwiftOpenWeatherMapAPI (0.0.1):
+    - Alamofire (~> 2.0)
+    - SwiftyJSON (~> 2.3.0)
+  - SwiftyJSON (2.3.1)
+
+DEPENDENCIES:
+  - LMGeocoder
+  - SwiftOpenWeatherMapAPI
+
+SPEC CHECKSUMS:
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  LMGeocoder: a0f635f948b0ca420d8d338e54886744cdcb215d
+  SwiftOpenWeatherMapAPI: 1b986152da08504135f61bb9ba4fd5228c3058e2
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+
+PODFILE CHECKSUM: b69224b004a5f11a2358095b188cbd81b9080008
+
+COCOAPODS: 1.0.0.beta.2
