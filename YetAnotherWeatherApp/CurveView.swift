@@ -41,7 +41,7 @@ class CurveView: UIView {
 }
 
 extension CurveView {
-
+    
     func interpolateWithHermite(points: [CGPoint]) -> UIBezierPath? {
         if points.count < 2 {
             return nil
@@ -98,7 +98,7 @@ extension CurveView {
                 mx = (curPt.x - prevPt.x)*0.5
                 my = (curPt.y - prevPt.y)*0.5
             }
-
+            
             let ctrlPt2 = CGPointMake(curPt.x - mx / 3.0, curPt.y - my / 3.0)
             
             path.addCurveToPoint(endPt, controlPoint1: ctrlPt1, controlPoint2: ctrlPt2)

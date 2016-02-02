@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-typealias temperature = (date: NSDate, value: Double)
-let apiKey = "271537219331766fbdaf30a4ef37fb33"
-
-
 extension NSDate {
     
     convenience init(dateString:String) {

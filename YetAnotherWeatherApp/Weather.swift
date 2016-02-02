@@ -27,7 +27,7 @@ struct Weather {
         self.icon = json["weather"].array![0]["icon"].stringValue
         self.day = NSDate(timeIntervalSince1970: json["dt"].doubleValue)
     }
-
+    
     init(json: JSON, city: City) {
         self.city = city
         self.temperature = json["temp"]["day"].intValue
@@ -58,8 +58,8 @@ struct Weather {
                 var weather = Weather(json: $0)
                 weather.city = city
                 return weather
-            })
+                })
         }
     }
-
+    
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZFI-JY-67O">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Weather Interface Controller-->
+        <scene sceneID="Cmj-TG-Wlb">
+            <objects>
+                <controller id="ZFI-JY-67O" customClass="WeatherInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" height="23.5" alignment="left" layout="vertical" spacing="0.0" id="J2d-7K-ktn">
+                            <items>
+                                <label width="1" height="33.5" alignment="left" textAlignment="center" id="iCH-Jh-YvY">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="93" alignment="left" id="bTq-Ot-G0N">
+                            <items>
+                                <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="01d" contentMode="scaleAspectFit" id="atu-ZZ-MWg"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="9Xg-4C-31h">
+                            <items>
+                                <label width="1" alignment="left" textAlignment="center" id="yQM-Qe-go1"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cityLabel" destination="iCH-Jh-YvY" id="6BC-E5-KuO"/>
+                        <outlet property="temperatureLabel" destination="yQM-Qe-go1" id="X1B-FB-ekV"/>
+                        <outlet property="weatherIcon" destination="atu-ZZ-MWg" id="2HO-MI-ViT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="750" y="407"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="VFN-Ni-aLD">
+            <objects>
+                <glanceController topTemplateType="groupLeftSmall" bottomTemplateType="extraLargeLargeBody1Footer" id="6uY-xL-Oso">
+                    <items>
+                        <group alignment="left" id="gLr-dL-7sT">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="pUu-8O-FXD"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" id="seV-aa-PYT"/>
+                        <label alignment="left" text="Label" id="BPM-UO-3te"/>
+                        <label alignment="left" text="Label" id="3Pn-Fn-CSB"/>
+                        <label alignment="left" text="1234" id="AQv-nZ-eL8"/>
+                        <label alignment="left" text="1234" id="SQT-QX-xyL"/>
+                        <label alignment="left" text="Label" id="OWD-kX-udn"/>
+                        <label alignment="left" text="Footer" id="uo3-W3-qD9"/>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="750" y="679"/>
+        </scene>
+    </scenes>
+</document>
