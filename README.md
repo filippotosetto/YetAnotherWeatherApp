@@ -1,2 +1,2 @@
 # YetAnotherWeatherApp
-An iOS weather App implemented in swift
+An iOS and WatchOS2 weather App implemented in swift
